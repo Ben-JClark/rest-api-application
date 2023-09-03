@@ -3,4 +3,4 @@ package-lock.json
 node_modules/
 
 # ignore any updates to the credentials
-db.config.js
+#db.config.js
