@@ -90,66 +90,63 @@ GET all of the projects in the database
 GET http://localhost:3000/projects
 ```
 
-GET a project by id, here is an example to get the project with id 1
+GET a project by id
 
 ```
-GET http://localhost:3000/project/1
+GET http://localhost:3000/project/ID_HERE
 ```
 
-GET a project by name, the name value will be after /
+GET a project by name
 
 ```
-http://localhost:3000/projects/Hey There, Interact with Me!
+http://localhost:3000/projects/NAME_HERE
 ```
 
 ### Post
 
 To create a new project, the new project data will be in the body
-Url example
 
 ```
 POST http://localhost:3000/projects
 ```
 
-Body example
+Body
 
 ```
-"id": "20",
-"projectname": "compx304-A2",
-"projectdesc": "networking project",
+"id": "ID_HERE",
+"projectname": "NAME_HERE",
+"projectdesc": "DESCRIPTION_HERE",
 "startdate": "2021-02-01 08:00",
 "enddate": "2021-03-01 08:00"
 ```
 
 ### Put
 
-UPDATE a project with new data (in body) by the project's id (in url)
-Url example
+UPDATE a project by id specified in the URL
 
 ```
-PUT http://localhost:3000/project/1
+PUT http://localhost:3000/project/ID_HERE
 ```
 
-Body example
+Body
 
 ```
-"id": "60",
-"projectname": "Rust",
-"projectdesc": "A very good game",
+"id": "ID_HERE",
+"projectname": "NAME_HERE",
+"projectdesc": "DESCRIPTION_HERE",
 "startdate": "2021-02-01 08:00",
 "enddate": "2021-02-01 08:00"
 ```
 
 ### Delete
 
-DELETE a project by its id
-Example with deleting a project with id 1
+DELETE a project by id 
 
 ```
-DELETE http://localhost:3000/project/1
+DELETE http://localhost:3000/project/ID_HERE
 ```
 
-Delete All
+Delete All projects
 
 ```
 DELETE http://localhost:3000/projects
